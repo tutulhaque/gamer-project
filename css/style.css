@@ -262,7 +262,7 @@ a{
 }
 
 .overlay-content a:hover {
-    color: #e74c3c;
+    color: #f40996;
 }
 
 .overlay-content h4 {
@@ -602,7 +602,7 @@ footer{
             }
             .image-buttons a{
                 text-decoration: none;
-                font-size: 11px;
+                font-size: 11px !important;
                 font-weight: 500;
             }
             /* Footer CSS */
