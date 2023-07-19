@@ -210,11 +210,63 @@ a{
     width: 280px;
     margin: 0px auto;
 }
-.video-item p{
+.video-item-title{
     margin-top: 16px;
     font-size: 20px;
     text-align: center;
 }
+
+/* Overlay Video Section */
+.video-item{
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.video-item:hover .overlay {
+    opacity: 1;
+}
+
+.overlay-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.overlay-content a {
+    font-size: 36px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.overlay-content a:hover {
+    color: #e74c3c;
+}
+
+.overlay-content h4 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+
+/* Overlay Video Section */
 /* Video Section End */
 /* Play Section Start */
 .play-main{
@@ -365,3 +417,212 @@ footer{
     text-align: center;
 }
 /* Footer End */
+
+/* ----------Tablet Media Query CSS Start---------------*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .header-nav ,.banner-main ,.we-gamer ,.play-main{
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .banner-img{
+        justify-content: center;
+    }
+    .video-items{
+        flex-wrap: wrap;
+    }
+    .play-content{
+        text-align: center;
+    }
+    .play-img img{
+        width: 500px;
+    }
+    .img-position img{
+        width: 200px;
+    }
+    .footer-menu {
+        padding: 20px 0px;
+    }
+    .footer-icon{
+        padding-bottom: 20px;
+    }
+
+  }
+/* ----------Tablet Media Query CSS End---------------*/
+
+  /* ----------Mobile Media Query CSS Start---------------*/
+  @media screen and (max-width:576px) {
+    /* nav Moblie CSS */
+    .header-nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .nav li{
+        padding: 0px 20px;
+        font-size: 26px;
+        font-family: Work sans;
+        color: #000;
+        list-style: none;
+        margin: 20px 0px;
+    }
+       /* nav Mobile CSS End*/
+        .banner-main{
+            display: flex;
+            flex-direction: column;
+            flex-direction: column-reverse;
+            justify-content: space-between;
+            align-items: center;
+            height: auto;
+            margin: 70px 0px;
+        }
+        
+        .banner-img{
+            display: flex;
+            justify-content: center;
+        }
+        .banner-content{
+            margin-top: 40px;
+            text-align:justify;
+            margin-left: 30px;
+        }
+        .banner-content h2{
+            font-size: 56px;
+
+        }
+        .banner-content p{
+            text-align: justify;
+        }
+        /* We are Gamer Section */
+        .we-gamer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px;
+            flex-direction: column-reverse;
+        }
+        .we-gamer-content h2{
+            font-size: 28px;
+        }
+        .we-gamer-content{
+            width: 80%;
+        }
+        .we-gamer-content h4{
+            text-align: center;
+        }
+        /* We are Gamer Section */
+        .video-items{
+            padding-top: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            justify-content: center;
+        }
+        .top-title h1{
+            font-size: 28px;
+        }
+
+        /* Play Section */
+       /* Play Section Start */
+            .play-main{
+            flex-direction: column;
+            justify-content: center;
+            padding: 30px 0px;
+            }
+            .color-subtitle{
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 700;
+                color: #F948B2;
+                width: 70%;
+                margin: 0px auto;
+                text-align: center;
+            }
+            .color-subtitle span{
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 700;
+                color: #000;
+                text-align: center;
+            }
+            .play-content p{
+                width: auto;
+                padding-top: 15px;
+                margin: 0px 30px;
+                text-align: center;
+                margin-left: 20px;
+
+            }
+            .play-img img{
+                width:350px;
+            }
+            .img-position img{
+                width: 40%;
+                position: relative;
+                margin-top: -20%;
+                margin-left: -10%;
+            }
+            /* Button CSS Start */
+            .button-section{
+                padding: 50px 0px;
+            }
+            .image-buttons{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                /* flex-wrap: wrap; */
+                align-items: center;
+                justify-content: center;
+            }
+            .img-button{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: #f7f7f7;
+                gap: 5px;
+                margin: 5px;
+                padding: 0px 10px;
+                border-radius: 45px;
+            }
+            .img-button img{
+                width: 20%;
+            }
+            .image-buttons a{
+                text-decoration: none;
+                font-size: 11px;
+                font-weight: 500;
+            }
+            /* Footer CSS */
+            footer{
+                padding: 10px 50px;
+            }
+            .footer-menu, .footer-icon{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                justify-content:space-between;
+                gap: 10px;
+                text-align: center;
+                padding-bottom: 30px;
+            }
+            .footer-menu a{
+                font-size: 15px;
+
+            }
+            .footer-bottom-menu{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                text-align: center;
+                gap: 10px;
+                margin-bottom: 20px;
+                
+            }
+
+  }
+   /* ----------Mobile Media Query CSS End---------------*/
+
