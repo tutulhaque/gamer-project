@@ -1,5 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
 *{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-family: Work Sans;
 }
+a{
+    text-decoration: none;
+}
+.title{
+    color: #000;
+    font-size: 48px;
+}
+.subtitle{
+    color: #F948B2;
+    font-size: 45px;
+}
+
+.primary-btn{
+    background-color: #F948B2;
+    color: #fff;
+    padding: 20px 40px;
+    border-radius: 48px;
+    text-decoration: none;
+}
+.primary-btn:hover{
+    background-color: #f40996;
+
+}
+.secondary-btn{
+    background-color:#4EC5F7;
+    color: #fff;
+    padding: 20px 40px;
+    border-radius: 48px;
+    text-decoration: none;
+}
+.secondary-btn:hover{
+    background-color: #04a9f0;
+}
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+}
+
+/* Header-nav CSS Start */
+.header-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-logo{
+    display: flex;
+    padding: 35px 0px;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+}
+.header-logo h3{
+    font-size: 45px;
+    padding-left: 10px;
+    color: #000;
+}
+.header-logo a span{
+    color: #F948B2;
+    font-family:Work Sans;
+    font-weight: 700;
+}
+.nav{
+    display: flex;
+    justify-content: flex-end;
+
+}
+.nav li{
+    padding: 0px 20px;
+    font-size: 26px;
+    font-family: Work sans;
+    color: #000;
+    list-style: none;
+}
+.nav li a{
+    color: #000;
+    text-decoration: none;
+}
+.nav li a:hover{
+    color: #F948B2;
+}
+.nav li:nth-child(3) a{
+    background-color: #e5e3e3;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+/* Header-nav CSS End */
