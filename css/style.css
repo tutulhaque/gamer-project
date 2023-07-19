@@ -216,3 +216,40 @@ a{
     text-align: center;
 }
 /* Video Section End */
+/* Play Section Start */
+.play-main{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding: 100px 0px;
+    gap: 50px;
+}
+.color-subtitle{
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    color: #F948B2;
+    width: 70%;
+    margin: 0px auto;
+}
+.color-subtitle span{
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    color: #000;
+}
+.play-content p{
+    width: 70%;
+    padding-top: 15px;
+    margin: 0px auto;
+}
+.play-img img{
+    width:90%
+}
+.img-position img{
+    width: 40%;
+    position: relative;
+    margin-top: -30%;
+    margin-left: -20%;
+}
+/* Play Section End */
