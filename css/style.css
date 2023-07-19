@@ -143,5 +143,37 @@ a{
     margin-top: 25px;
 
 }
-
 /* Banner CSS End */
+/* We are Gamer Section Start */
+.we-gamer{
+    display: flex;
+    align-items: center;
+    padding: 50px 0px;
+}
+.we-gamer-img{
+    width: 60%;
+}
+.we-gamer-img img{
+    width: 100%;
+}
+.we-gamer-content{
+    width: 40%;
+    text-align: center;
+}
+
+.we-gamer-content h2{
+    color: #f40996;
+    font-size: 45px;
+    padding: 10px 0px;
+}
+.we-gamer-content p{
+    padding-bottom: 50px;
+}
+.we-gamer-content h4{
+    padding-top: 50px;
+    text-align: right;
+}
+.we-gamer-content small{
+    font-weight: 500;
+}
+/* We are Gamer Section End */
